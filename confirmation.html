@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rangahala — Your ticket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">Ranga<span>hala</span></div>
+    <nav><a href="index.html">Events</a></nav>
+  </header>
+
+  <main class="confirmation-page" id="ticket-result">
+    <p class="eyebrow">Booking confirmed</p>
+    <h1>You're going. Here's your ticket.</h1>
+
+    <div class="ticket-stub-final">
+      <div class="ticket-stub-final__top">
+        <span id="ticket-event"></span>
+        <dl>
+          <dt>Venue</dt>
+          <dd id="ticket-venue"></dd>
+          <dt>When</dt>
+          <dd id="ticket-datetime"></dd>
+          <dt>Ticket</dt>
+          <dd id="ticket-tier"></dd>
+          <dt>Booked by</dt>
+          <dd id="ticket-buyer"></dd>
+          <dt>Total paid</dt>
+          <dd id="ticket-total"></dd>
+        </dl>
+      </div>
+      <div class="ticket-stub-final__bottom">
+        <div>
+          <span class="ticket-stub-final__ref-label">Reference</span>
+          <span class="ticket-stub-final__ref" id="ticket-reference"></span>
+        </div>
+        <div class="barcode" aria-hidden="true">
+          <span style="height:60%"></span><span style="height:90%"></span><span style="height:40%"></span>
+          <span style="height:75%"></span><span style="height:100%"></span><span style="height:55%"></span>
+          <span style="height:85%"></span><span style="height:30%"></span><span style="height:70%"></span>
+          <span style="height:95%"></span><span style="height:45%"></span><span style="height:65%"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="confirmation-actions">
+      <button class="primary" onclick="window.print()">Print ticket</button>
+      <a href="index.html">Book another</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

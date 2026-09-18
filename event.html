@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rangahala — Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">Ranga<span>hala</span></div>
+    <nav><a href="index.html">Events</a></nav>
+  </header>
+
+  <main class="event-page" id="event-detail">
+    <a class="back-link" href="index.html">← All events</a>
+
+    <p id="event-category"></p>
+    <h1 id="event-title"></h1>
+    <p id="event-venue"></p>
+    <p id="event-datetime"></p>
+    <p id="event-blurb"></p>
+
+    <form class="booking-form" id="booking-form">
+      <h2>Choose your ticket</h2>
+
+      <div id="tier-list"></div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="qty">Quantity</label>
+          <input type="number" id="qty" min="1" max="10" value="1" />
+        </div>
+        <div class="form-field">
+          <label for="buyer-name">Full name</label>
+          <input type="text" id="buyer-name" required placeholder="As it should appear on the ticket" />
+        </div>
+        <div class="form-field">
+          <label for="buyer-contact">Email or phone</label>
+          <input type="text" id="buyer-contact" required placeholder="you@example.com" />
+        </div>
+      </div>
+
+      <div class="total-row">
+        <span>Total</span>
+        <span id="total-price"></span>
+      </div>
+
+      <button type="submit" class="submit-btn">Confirm booking</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

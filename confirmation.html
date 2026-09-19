@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rangahala — Your ticket</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M6 14a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v4a4 4 0 0 0 0 8v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4v-4a4 4 0 0 0 0-8z' fill='%23f2a93b'/%3E%3Cpath d='M24 10v28' stroke='%2314162b' stroke-width='2' stroke-dasharray='3 4'/%3E%3Ccircle cx='24' cy='24' r='5' fill='%23ff6b5b'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -11,8 +12,19 @@
 <body>
 
   <header class="site-header">
-    <div class="brand">Ranga<span>hala</span></div>
-    <nav><a href="index.html">Events</a></nav>
+    <a class="brand" href="index.html">
+      <svg class="brand__logo" width="28" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 14a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v4a4 4 0 0 0 0 8v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4v-4a4 4 0 0 0 0-8z" fill="var(--amber)" />
+        <path d="M24 10v28" stroke="var(--ink)" stroke-width="2" stroke-dasharray="3 4" />
+        <circle cx="24" cy="24" r="5" fill="var(--coral)" />
+      </svg>
+      Ranga<span>hala</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main class="confirmation-page" id="ticket-result">
@@ -51,7 +63,7 @@
 
     <div class="confirmation-actions">
       <button class="primary" onclick="window.print()">Print ticket</button>
-      <a href="index.html">Book another</a>
+      <a href="events.html">Book another</a>
     </div>
   </main>
 

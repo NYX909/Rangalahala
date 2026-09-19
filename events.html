@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rangahala — Book your seat</title>
+  <title>Rangahala — All events</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M6 14a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v4a4 4 0 0 0 0 8v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4v-4a4 4 0 0 0 0-8z' fill='%23f2a93b'/%3E%3Cpath d='M24 10v28' stroke='%2314162b' stroke-width='2' stroke-dasharray='3 4'/%3E%3Ccircle cx='24' cy='24' r='5' fill='%23ff6b5b'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="home-page">
+<body>
 
   <header class="site-header">
     <a class="brand" href="index.html">
@@ -28,30 +28,13 @@
   </header>
 
   <section class="hero">
-    <h1>Every seat has a story.</h1>
-    <p>Concerts, films, comedy and shows — pick an event, choose your ticket, and you're in.</p>
-    <a class="cta-btn" href="events.html">Browse all events →</a>
+    <h1>All events</h1>
+    <p>Everything on sale right now — filter by category, pick your seat, and lock it in.</p>
   </section>
 
-  <section class="about-section" id="about">
-    <h2>About Rangahala</h2>
-    <p>
-      Rangahala is a small ticket-booking site built for our school exhibition. It brings
-      together local concerts, film premieres, comedy nights and cultural shows in one place,
-      so picking a night out — or a ticket for a school event — takes a minute, not an errand.
-    </p>
-    <p>
-      Everything you see runs right in your browser: pick a ticket tier, fill in your details,
-      and you'll get an instant confirmation with a reference code — no server, no sign-up.
-      It's a demo project, but the whole booking flow works exactly like a real one would.
-    </p>
-  </section>
+  <div id="filter-bar"></div>
 
-  <section class="highlights">
-    <h2>Featured events</h2>
-    <p class="highlights__intro">A few of the shows on sale this season.</p>
-    <div id="home-highlights"></div>
-  </section>
+  <div id="event-grid"></div>
 
   <script src="script.js"></script>
 </body>

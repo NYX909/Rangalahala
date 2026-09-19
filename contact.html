@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rangahala — Contact & Info</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M6 14a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v4a4 4 0 0 0 0 8v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4v-4a4 4 0 0 0 0-8z' fill='%23f2a93b'/%3E%3Cpath d='M24 10v28' stroke='%2314162b' stroke-width='2' stroke-dasharray='3 4'/%3E%3Ccircle cx='24' cy='24' r='5' fill='%23ff6b5b'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <svg class="brand__logo" width="28" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 14a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v4a4 4 0 0 0 0 8v4a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4v-4a4 4 0 0 0 0-8z" fill="var(--amber)" />
+        <path d="M24 10v28" stroke="var(--ink)" stroke-width="2" stroke-dasharray="3 4" />
+        <circle cx="24" cy="24" r="5" fill="var(--coral)" />
+      </svg>
+      Ranga<span>hala</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="event-page" id="contact-page">
+    <a class="back-link" href="index.html">← Home</a>
+
+    <p id="event-category">About &amp; Contact</p>
+    <h1 id="event-title">We'd love to hear from you</h1>
+    <p id="event-venue">Rangahala is a small student-run ticketing site built for our school exhibition.</p>
+    <p id="event-blurb">
+      Every event you see here is real, but bookings made on this demo stay on your own device —
+      nothing is sent to a server. If you have a question about an event, a booking, or this
+      project itself, reach us using the details below or send a message with the form.
+    </p>
+
+    <div id="tier-list">
+      <div class="tier-option">
+        <span class="tier-option__name">Email</span>
+        <span class="tier-option__price">hello@rangahala.lk</span>
+      </div>
+      <div class="tier-option">
+        <span class="tier-option__name">Phone</span>
+        <span class="tier-option__price">+94 77 123 4567</span>
+      </div>
+      <div class="tier-option">
+        <span class="tier-option__name">Address</span>
+        <span class="tier-option__price">Colombo, Sri Lanka</span>
+      </div>
+      <div class="tier-option">
+        <span class="tier-option__name">Hours</span>
+        <span class="tier-option__price">Mon–Fri, 9am–5pm</span>
+      </div>
+    </div>
+
+    <form class="booking-form" id="contact-form">
+      <h2>Send us a message</h2>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="contact-name">Full name</label>
+          <input type="text" id="contact-name" required placeholder="Your name" />
+        </div>
+        <div class="form-field">
+          <label for="contact-email">Email or phone</label>
+          <input type="text" id="contact-email" required placeholder="you@example.com" />
+          <span class="field-error" id="contact-email-error">Enter a valid email or phone number.</span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="contact-message">Message</label>
+          <input type="text" id="contact-message" required placeholder="How can we help?" />
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Send message</button>
+      <p class="empty-state" id="contact-status" style="display:none;"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

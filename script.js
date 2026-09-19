@@ -33,7 +33,7 @@ const EVENTS = [
   },
   {
     id: "e2",
-    title: "Void Walker — Premiere Screening",
+    title: "Spiderman Brand New Day — Premiere Screening",
     category: "Film",
     venue: "Savoy Cinema, Wellawatte",
     date: "2026-10-02",
@@ -41,8 +41,8 @@ const EVENTS = [
     blurb: "A sci-fi premiere with a Q&A with the director after the credits.",
     photo: "images/film.jpg",
     tiers: [
-      { name: "Standard", price: 900 },
-      { name: "Recliner", price: 1800 }
+      { name: "Standard", price: 2000},
+      { name: "Recliner", price: 4000}
     ]
   },
   {
@@ -74,15 +74,15 @@ const EVENTS = [
   },
   {
     id: "e5",
-    title: "Kandy Perahera: Cultural Night",
+    title: "Kandy Lake Club Cultural Dance Show: Cultural Night",
     category: "Culture",
     venue: "Kandy City Centre Grounds",
     date: "2026-12-05",
     time: "6:00 PM",
     blurb: "Traditional dance, drumming, and a recreated procession under the lights.",
     tiers: [
-      { name: "Standing", price: 800 },
-      { name: "Seated", price: 1600 }
+      { name: "Standing", price: 3000 },
+      { name: "Seated", price: 4500 }
     ]
   }
 ];
